@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="tip-calculator.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="logo">
+<img src="./images/logo.svg" alt="">
+  </div>
+  <div class="container">
+    <div class="calculate">
+        <div class="bill">
+            <h3>Bill</h3>
+            <input class="dollar-textbox" type="text" id="billInput"  placeholder="142.55">
+            <!-- <img src="./images/icon-dollar.svg" alt="" class="dollar-sign"> -->
+        </div>
+    <div class="select">
+      <h3>Select Tip %</h3>
+      <div class="buttons" id="tipButtons">
+      <button id="btn" value="5">5%</button>
+      <button id="btn" value="10">10%</button>
+      <button id="btn" value="15">15%</button>
+      <button id="btn" value="25">25%</button>
+      <button id="btn" value="50">50%</button>
+      <input type="text" name="" id="Custom" placeholder="Custom">
+   </div>
+        </div>
+        <div class="people">
+    <h3>Number of People</h3>
+     <input type="text" placeholder="5" id="numOfPeople" class="person-sign-textbox">
+     <label for="" class="error">Can't be zero</label>
+        </div>
+    </div>
+
+
+   <div class="dark-rightside">
+    <div class="tip-amount">
+   <div class="text">
+   <h2>Tip Amount</h2>
+    <h4>/ person</h4>
+    </div>
+   <span id="result">$4.27</span>
+   </div>
+
+   <div class="total">
+   <div class="text">
+    <h2>Total</h2>
+   <h4>/ person</h4>
+    </div>
+   <span id="totalResult">$32.79</span>
+   </div>
+   <button id="reset">RESET</button>
+   </div>
+  </div>
+<script src="./tip-calculator.js"></script>
+</body>
+</html>
